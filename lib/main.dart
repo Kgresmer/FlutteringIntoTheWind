@@ -9,11 +9,11 @@ class MyApp extends StatelessWidget {
     return new MaterialApp(
       // what happens if you comment out this title?
       title: 'Welcome to Flutter',
-      home: new Scaffold(
-        appBar: new AppBar(
-          title: new Text('Welcome to Flutter'),
-        ),
-        body: new RandomWords()
+        // adjust color? what else is in here?
+      theme: new ThemeData(
+        primaryColor: Colors.white,
+      ),
+      home: new RandomWords()
       ),
     );
   }
