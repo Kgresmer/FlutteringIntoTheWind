@@ -14,13 +14,12 @@ class MyApp extends StatelessWidget {
         primaryColor: Colors.white,
       ),
       home: new RandomWords()
-      ),
     );
   }
 }
 
 class RandomWords extends StatefulWidget {
-  @Override
+  @override
   createState() => new RandomWordsState();
 }
 
@@ -37,7 +36,7 @@ class RandomWordsState extends State<RandomWords> {
       appBar: new AppBar(
         title: new Text('Startup Name Generator'),
         actions: <Widget>[
-          new IconButton(icon: new Icon(Icon.list), onPressed: _pushSaved)
+          new IconButton(icon: new Icon(Icons.list), onPressed: _pushSaved)
         ]
       ),
       body: _buildSuggestions()
